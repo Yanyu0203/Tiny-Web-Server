@@ -28,7 +28,7 @@ systemctl status mysql.service  //check status
 3. Build the database:
 
 ```sql
-	create database yourdb;
+    create database yourdb;
 	USE yourdb;
     CREATE TABLE user(
         username char(50) NULL,
