@@ -28,13 +28,13 @@ systemctl status mysql.service  //check status
 3. Build the database:
 
 ```sql
-    create database yourdb;
-	USE yourdb;
-    CREATE TABLE user(
-        username char(50) NULL,
-        passwd char(50) NULL
-    )ENGINE=InnoDB;
-    INSERT INTO user(username, passwd) VALUES('name', 'passwd');
+create database yourdb;
+USE yourdb;
+CREATE TABLE user(
+	username char(50) NULL,
+	passwd char(50) NULL
+)ENGINE=InnoDB;
+INSERT INTO user(username, passwd) VALUES('name', 'passwd');
 ```
 
 4. Edit database info in main.cpp
